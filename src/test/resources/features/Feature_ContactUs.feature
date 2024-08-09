@@ -1,10 +1,9 @@
 
-@tag
-Feature: Contact Us feature
+Feature: ContactUs feature funtionality
   
 
-  @tag3
-  Scenario: My Info Contatc us details functionality
+  @Regression 
+  Scenario: My Info ContactUs Details Functionality
    Given   User opens browser
     When    User launches URL "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
     And     User enter Email as "Admin" and Password as "admin123"

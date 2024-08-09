@@ -1,33 +1,23 @@
 package com.qa.stepdefinations;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 import com.qa.pageObjects.ContactUsWebPageObjects;
 import com.qa.pageObjects.LoginWebPageObjects;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 
-public class StepDefinations {
+public class StepDefinations extends BaseClass {
 
-	public WebDriver driver;
-	public LoginWebPageObjects lp;
-	public ContactUsWebPageObjects cpo;
 
 	@Given("User opens browser")
-	public void user_opens_browser() {
-
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	public void user_opens_browser() throws Throwable {
+         setup(); //Opens Browser
 		lp = new LoginWebPageObjects(driver);
 	}
 
@@ -113,4 +103,19 @@ public class StepDefinations {
 	}
 
 
+	//hooks usage-->Taking Screenshot for failed test cases.
+	@After
+	public void tearDown(Scenario sc)
+    {
+		if(sc.isFailed() == true)
+		{
+			try {
+				Thread.sleep(4000);
+				getScreenshot();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+    	driver.quit();
+    }
 }

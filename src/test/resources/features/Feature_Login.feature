@@ -1,4 +1,4 @@
-@tag
+
 Feature: Login Funtionality
 Background:
     Given   User opens browser
@@ -7,18 +7,18 @@ Background:
     And     User clicks on Login button
     Then    Page Home page Title should be "OrangeHRM"
 
-  @tag1
+  @Sanity
   Scenario: Login Functionality
     Then    User checks for dashboard validation as "Dashboard"
     
     
     
-  @tag2
+  @Sanity
    Scenario Outline:Login with DDT Multiple credentials
     Then    User clicks on Logout
     
      Examples: 
-    |Email           |   Password|
+    |Email           | Password|
     |AdminRaj        | admin2345 |
     |Admin           | admin123  |
     

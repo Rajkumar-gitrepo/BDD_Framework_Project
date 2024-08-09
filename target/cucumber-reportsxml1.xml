@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="28.125" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="Login Funtionality" name="Login with DDT Multiple credentials - #1.1" time="13.446">
+<testsuite name="Cucumber" time="57.377" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="ContactUs feature funtionality" name="My Info ContactUs Details Functionality" time="22.215">
+<system-out><![CDATA[
+Given User opens browser....................................................passed
+When User launches URL "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login".passed
+And User enter Email as "Admin" and Password as "admin123"..................passed
+And User clicks on Login button.............................................passed
+Then Page Home page Title should be "OrangeHRM".............................passed
+And User clicks on MyInfo option............................................passed
+And User clicks on Contact details option...................................passed
+Then User can view contact details..........................................passed
+And User enters Street1 details.............................................passed
+And User enters State details...............................................passed
+And User enters Zipcode Deatis..............................................passed
+And User selects country from dropdown......................................passed
+And User enters mobile number...............................................passed
+Then User clicks on save button.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Funtionality" name="Login Functionality" time="8.264">
+<system-out><![CDATA[
+Given User opens browser....................................................passed
+When User launches URL "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login".passed
+And User enter Email as "Admin" and Password as "admin123"..................passed
+And User clicks on Login button.............................................passed
+Then Page Home page Title should be "OrangeHRM".............................passed
+Then User checks for dashboard validation as "Dashboard"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Funtionality" name="Login with DDT Multiple credentials - #1.1" time="11.849">
 <system-out><![CDATA[
 Given User opens browser....................................................passed
 When User launches URL "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login".passed
@@ -10,7 +38,7 @@ Then Page Home page Title should be "OrangeHRM".............................pass
 Then User clicks on Logout..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Funtionality" name="Login with DDT Multiple credentials - #1.2" time="14.237">
+<testcase classname="Login Funtionality" name="Login with DDT Multiple credentials - #1.2" time="14.57">
 <system-out><![CDATA[
 Given User opens browser....................................................passed
 When User launches URL "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login".passed
