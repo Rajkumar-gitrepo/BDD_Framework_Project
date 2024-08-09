@@ -11,19 +11,16 @@ import io.cucumber.junit.CucumberOptions;
 		dryRun =     false,
 		monochrome = true,
 		glue       = "com.qa.stepdefinations",
-		plugin     = {"pretty","html:target/cucumber-reports1.html"}
+		plugin     = {"pretty","html:target/cucumber-reportshtml1.html",
+				      "pretty","junit:target/cucumber-reportsxml1.xml",
+				      "pretty","json:target/cucumber-reportsjson1.json"},
+		tags       = "@tag2"
 		
 		
-		
-		
-		
-		        )
-
-
-
+		)
 
 
 
 public class JUnitRunner {
-
+//This class will be empty
 }

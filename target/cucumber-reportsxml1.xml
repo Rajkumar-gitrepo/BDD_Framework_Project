@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="28.125" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Login Funtionality" name="Login with DDT Multiple credentials - #1.1" time="13.446">
+<system-out><![CDATA[
+Given User opens browser....................................................passed
+When User launches URL "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login".passed
+And User enter Email as "Admin" and Password as "admin123"..................passed
+And User clicks on Login button.............................................passed
+Then Page Home page Title should be "OrangeHRM".............................passed
+Then User clicks on Logout..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Funtionality" name="Login with DDT Multiple credentials - #1.2" time="14.237">
+<system-out><![CDATA[
+Given User opens browser....................................................passed
+When User launches URL "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login".passed
+And User enter Email as "Admin" and Password as "admin123"..................passed
+And User clicks on Login button.............................................passed
+Then Page Home page Title should be "OrangeHRM".............................passed
+Then User clicks on Logout..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
