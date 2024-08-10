@@ -1,5 +1,7 @@
 package com.qa.stepdefinations;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
 
 import com.qa.pageObjects.ContactUsWebPageObjects;
@@ -10,6 +12,8 @@ import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
+import java.io.*;
 
 
 public class StepDefinations extends BaseClass {
@@ -116,6 +120,24 @@ public class StepDefinations extends BaseClass {
 				e.printStackTrace();
 			}
 		}
-    	driver.quit();
+    	
     }
+	@After
+	public void getScreenshotForFailureTestScenario(Scenario scenario)
+	{
+		if(scenario.isFailed())
+			{
+			   try {
+				Thread.sleep(4000);
+			} catch (InterruptedException e) {
+			
+				e.printStackTrace();
+			}
+			   byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+			   Allure.addAttachment("Failed-Screenshot",new ByteArrayInputStream(screenshot));
+			}
+		driver.quit();
+	}
+	
+
 }
