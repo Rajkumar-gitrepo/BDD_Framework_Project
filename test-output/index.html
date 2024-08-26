@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\rajku\AppData\Local\Temp\testng-eclipse--1032166492\testng-customsuite.xml</span>
+                    <span>C:\Users\rajku\AppData\Local\Temp\testng-eclipse--2087444555\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.qa.runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;My Info ContactUs Details Functionality&quot;, &quot;ContactUs feature funtionality&quot;)">runScenario("My Info ContactUs Details Functionality", "ContactUs feature funtionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +117,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.qa.runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;My Info ContactUs Details Functionality&quot;, &quot;ContactUs feature funtionality&quot;)">runScenario("My Info ContactUs Details Functionality", "ContactUs feature funtionality")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.qa.runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with DDT Multiple credentials&quot;, &quot;Login Funtionality&quot;)">runScenario("Login with DDT Multiple credentials", "Login Funtionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.qa.runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with DDT Multiple credentials&quot;, &quot;Login Funtionality&quot;)">runScenario("Login with DDT Multiple credentials", "Login Funtionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.qa.runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login Functionality&quot;, &quot;Login Funtionality&quot;)">runScenario("Login Functionality", "Login Funtionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.qa.runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with DDT Multiple credentials&quot;, &quot;Login Funtionality&quot;)">runScenario("Login with DDT Multiple credentials", "Login Funtionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.qa.runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with DDT Multiple credentials&quot;, &quot;Login Funtionality&quot;)">runScenario("Login with DDT Multiple credentials", "Login Funtionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -133,9 +142,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.qa.runner.TestNGRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -145,6 +154,65 @@
                   </a> <!-- runScenario("My Info ContactUs Details Functionality", "ContactUs feature funtionality") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("My Info ContactUs Details Functionality","ContactUs feature funtionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=127.0.6533.119)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [5d83569218f9db93e9804f23b4131e5f, clickElement {id=f.E6CDB9B28BF24C1B09412C7A0513EB6A.d.09C21E7090672B36FA4E77E128471A1B.e.30}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.119, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.3:4444/sessio..., se:cdpVersion: 127.0.6533.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on linux (5d83569218f9db93e9804f23b4131e5f)] -&gt; xpath: //span[normalize-space()=&apos;My Info&apos;]]
+Session ID: 5d83569218f9db93e9804f23b4131e5f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at com.qa.pageObjects.ContactUsWebPageObjects.clickOnMyInfo(ContactUsWebPageObjects.java:44)
+	at com.qa.stepdefinations.StepDefinations.user_clicks_on_my_info_option(StepDefinations.java:66)
+	at ✽.User clicks on MyInfo option(file:///D:/Project_2024/Behaviour_Driven_Development_Project/./src/test/resources/features/Feature_ContactUs.feature:12)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.runner.TestNGRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with DDT Multiple credentials&quot;, &quot;Login Funtionality&quot;)">
+                  </a> <!-- runScenario("Login with DDT Multiple credentials", "Login Funtionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with DDT Multiple credentials","Login Funtionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with DDT Multiple credentials&quot;, &quot;Login Funtionality&quot;)">
+                  </a> <!-- runScenario("Login with DDT Multiple credentials", "Login Funtionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with DDT Multiple credentials","Login Funtionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -159,32 +227,12 @@
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Login with DDT Multiple credentials&quot;, &quot;Login Funtionality&quot;)">
-                  </a> <!-- runScenario("Login with DDT Multiple credentials", "Login Funtionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login with DDT Multiple credentials","Login Funtionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Login with DDT Multiple credentials&quot;, &quot;Login Funtionality&quot;)">
-                  </a> <!-- runScenario("Login with DDT Multiple credentials", "Login Funtionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login with DDT Multiple credentials","Login Funtionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\rajku\AppData\Local\Temp\testng-eclipse--1032166492\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\rajku\AppData\Local\Temp\testng-eclipse--2087444555\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -245,24 +293,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.qa.runner.TestNGRunner')
-data.setCell(0, 3, 26622);
+data.setCell(0, 3, 42635);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.qa.runner.TestNGRunner')
-data.setCell(1, 3, 8849);
+data.setCell(1, 3, 42086);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.qa.runner.TestNGRunner')
-data.setCell(2, 3, 8066);
+data.setCell(2, 3, 33706);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'com.qa.runner.TestNGRunner')
-data.setCell(3, 3, 7605);
+data.setCell(3, 3, 33144);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -290,28 +338,30 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.runner.TestNGRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@6897a4a)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@4e17442f)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("My Info ContactUs Details Functionality", "ContactUs feature funtionality")</span>
-                <span class="method-start">939 ms</span>
+                <span class="method-start">1549 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login Functionality", "Login Funtionality")</span>
-                <span class="method-start">27567 ms</span>
+                <span class="method-start">35268 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with DDT Multiple credentials", "Login Funtionality")</span>
-                <span class="method-start">36419 ms</span>
+                <span class="method-start">68420 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with DDT Multiple credentials", "Login Funtionality")</span>
-                <span class="method-start">44026 ms</span>
+                <span class="method-start">110511 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">52101 ms</span>
+                <span class="method-start">153164 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

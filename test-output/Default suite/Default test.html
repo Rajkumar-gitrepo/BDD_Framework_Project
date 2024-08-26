@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 10 18:32:56 IST 2024</td>
+<td>Started on:</td><td>Sun Aug 25 16:14:35 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>52 seconds (52176 ms)</td>
+<tr><td>Total time:</td><td>153 seconds (153265 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,79 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.qa.runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "My Info ContactUs Details Functionality", "ContactUs feature funtionality"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=127.0.6533.119)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [5d83569218f9db93e9804f23b4131e5f, clickElement {id=f.E6CDB9B28BF24C1B09412C7A0513EB6A.d.09C21E7090672B36FA4E77E128471A1B.e.30}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.119, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.3:4444/sessio..., se:cdpVersion: 127.0.6533.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on linux (5d83569218f9db93e9804f23b4131e5f)] -&gt; xpath: //span[normalize-space()=&apos;My Info&apos;]]
+Session ID: 5d83569218f9db93e9804f23b4131e5f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at com.qa.pageObjects.ContactUsWebPageObjects.clickOnMyInfo(ContactUsWebPageObjects.java:44)
+	at com.qa.stepdefinations.StepDefinations.user_clicks_on_my_info_option(StepDefinations.java:66)
+	at ✽.User clicks on MyInfo option(file:///D:/Project_2024/Behaviour_Driven_Development_Project/./src/test/resources/features/Feature_ContactUs.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1240320816", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1240320816'><pre>org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=127.0.6533.119)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [5d83569218f9db93e9804f23b4131e5f, clickElement {id=f.E6CDB9B28BF24C1B09412C7A0513EB6A.d.09C21E7090672B36FA4E77E128471A1B.e.30}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.119, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.3:4444/sessio..., se:cdpVersion: 127.0.6533.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on linux (5d83569218f9db93e9804f23b4131e5f)] -&gt; xpath: //span[normalize-space()=&apos;My Info&apos;]]
+Session ID: 5d83569218f9db93e9804f23b4131e5f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at com.qa.pageObjects.ContactUsWebPageObjects.clickOnMyInfo(ContactUsWebPageObjects.java:44)
+	at com.qa.stepdefinations.StepDefinations.user_clicks_on_my_info_option(StepDefinations.java:66)
+	at ✽.User clicks on MyInfo option(file:///D:/Project_2024/Behaviour_Driven_Development_Project/./src/test/resources/features/Feature_ContactUs.feature:12)
+</pre></div></td>
+<td>33</td>
+<td>com.qa.runner.TestNGRunner@626abbd0</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,24 +149,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.qa.runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "My Info ContactUs Details Functionality", "ContactUs feature funtionality"</td>
+<td title='com.qa.runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.qa.runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with DDT Multiple credentials", "Login Funtionality"</td>
 <td></td>
-<td>26</td>
+<td>42</td>
+<td>com.qa.runner.TestNGRunner@626abbd0</td></tr>
+<tr>
+<td title='com.qa.runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.qa.runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with DDT Multiple credentials", "Login Funtionality"</td>
+<td></td>
+<td>42</td>
 <td>com.qa.runner.TestNGRunner@626abbd0</td></tr>
 <tr>
 <td title='com.qa.runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.qa.runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login Functionality", "Login Funtionality"</td>
 <td></td>
-<td>8</td>
-<td>com.qa.runner.TestNGRunner@626abbd0</td></tr>
-<tr>
-<td title='com.qa.runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.qa.runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with DDT Multiple credentials", "Login Funtionality"</td>
-<td></td>
-<td>8</td>
-<td>com.qa.runner.TestNGRunner@626abbd0</td></tr>
-<tr>
-<td title='com.qa.runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.qa.runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with DDT Multiple credentials", "Login Funtionality"</td>
-<td></td>
-<td>7</td>
+<td>33</td>
 <td>com.qa.runner.TestNGRunner@626abbd0</td></tr>
 </table><p>
 </body>
